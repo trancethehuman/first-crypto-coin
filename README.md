@@ -1,7 +1,7 @@
 # first-crypto-coin
 dabbling with making cryptocurrencies
 Install library
-npm install --save savjeecoin
+npm install --save haiCoin
 
 Generate a keypair
 
