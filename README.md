@@ -34,9 +34,10 @@ const myChain = new Blockchain();
 ```
 const tx = new Transaction(myKey.getPublic('hex'), 'toAddress', 100);
 tx.signTransaction(myKey);
+myChain.addTransaction(tx);
 ```
 
-myChain.addTransaction(tx);
 To finalize this transaction, we have to mine a new block. We give this method our wallet address because we will receive a mining reward:
-
+```
 myChain.minePendingTransactions(myKey.getPublic('hex'));
+```
